@@ -2,6 +2,7 @@ package ex01;
 
 import com.google.gson.Gson;
 import ex01.dto.OrderDetailDTO;
+import ex01.dto.OrderDetailV2DTO;
 import ex01.dto.ProductDTO;
 import ex01.dto.ProductDetailDTO;
 import ex01.model.*;
@@ -81,7 +82,7 @@ public class App1 {
 
         System.out.println("6-2. 상품 상세 화면 (or1)");
 
-        OrderDetailDTO orderDetailDTO = new OrderDetailDTO(or1Options);
+        OrderDetailV2DTO orderDetailDTO = new OrderDetailV2DTO(or1Options);
         String r3 = gson.toJson(orderDetailDTO);
         System.out.println(r3);
 
